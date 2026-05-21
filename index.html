@@ -790,6 +790,8 @@
           <input type="hidden" name="access_key" value="7c44ef8e-c638-4694-b67a-cd34684be457">
           <input type="hidden" name="subject" value="New DM Tuition Enquiry">
           <input type="hidden" name="from_name" value="DM Tuition Website">
+          <input type="hidden" name="replyto" id="replyto-field" value="">
+
           <div class="f-row">
             <div class="fg"><label for="f-name">Parent / Guardian Name</label><input type="text" id="f-name" name="name" placeholder="Full name" required></div>
             <div class="fg"><label for="f-phone">Contact Number</label><input type="tel" id="f-phone" name="phone" placeholder="07..."></div>
@@ -859,6 +861,7 @@
   const form = document.getElementById('enq-form');
   const btn  = document.getElementById('f-btn');
   const succ = document.getElementById('f-success');
+  document.getElementById('f-email').addEventListener('change', function(){ document.getElementById('replyto-field').value = this.value; });
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
     btn.disabled = true; btn.textContent = 'Sending…';
