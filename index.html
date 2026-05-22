@@ -786,10 +786,8 @@
         </div>
       </div>
       <div>
-        <form id="enq-form" action="https://api.web3forms.com/submit" method="POST" class="enq-form">
-          <input type="hidden" name="access_key" value="7c44ef8e-c638-4694-b67a-cd34684be457">
-          <input type="hidden" name="subject" value="New DM Tuition Enquiry">
-          <input type="hidden" name="from_name" value="DM Tuition Website">
+        <form id="enq-form" action="https://formspree.io/f/xkoejqrg" method="POST" class="enq-form">
+          
           <input type="hidden" name="replyto" id="replyto-field" value="">
 
           <div class="f-row">
@@ -866,7 +864,7 @@
     e.preventDefault();
     btn.disabled = true; btn.textContent = 'Sending…';
     try {
-      const res  = await fetch('https://api.web3forms.com/submit', { method:'POST', body:new FormData(form) });
+      const res  = await fetch('https://formspree.io/f/xkoejqrg', { method:'POST', body:new FormData(form) });
       const data = await res.json();
       if (data.success) { form.style.display='none'; succ.style.display='block'; }
       else { btn.disabled=false; btn.textContent='Book Free Intro Session →'; alert('Something went wrong — please email DMtuition@gmail.com directly.'); }
