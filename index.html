@@ -866,7 +866,7 @@
     try {
       const res  = await fetch('https://formspree.io/f/xkoejqrg', { method:'POST', body:new FormData(form) });
       const data = await res.json();
-      if (data.ok) { form.style.display='none'; succ.style.display='block'; }
+      if (res.ok) { form.style.display='none'; succ.style.display='block'; }
       else { btn.disabled=false; btn.textContent='Book Free Intro Session →'; alert('Something went wrong — please email DMtuition@gmail.com directly.'); }
     } catch(err) { btn.disabled=false; btn.textContent='Book Free Intro Session →'; alert('Something went wrong — please email DMtuition@gmail.com directly.'); }
   });
