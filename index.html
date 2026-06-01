@@ -438,9 +438,43 @@
     .hstat{ border-right:none; border-bottom:1px solid rgba(90,127,170,0.2); padding:14px 24px; }
     .hstat:last-child{ border-bottom:none; }
   }
+
+  /* ─── SCROLL PROGRESS BAR ─── */
+  #scroll-progress {
+    position:fixed; top:0; left:0; height:3px; width:0;
+    z-index:400; pointer-events:none;
+    background:linear-gradient(90deg, var(--steel) 0%, var(--steel-light) 45%, var(--gold) 100%);
+    box-shadow:0 0 12px rgba(152,186,212,0.7), 0 0 4px rgba(201,168,76,0.5);
+  }
+
+  /* ─── SHIMMER HEADINGS ─── */
+  .s-title em {
+    background-image:linear-gradient(110deg,
+      var(--steel) 0%, var(--steel-light) 40%, #ffffff 50%, var(--steel-light) 60%, var(--steel) 100%);
+    background-size:200% auto;
+    -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent; color:transparent;
+    animation:shimmerSweep 6s linear infinite;
+  }
+  .hero-h1 em { background-size:200% auto; animation:shimmerSweep 7s linear infinite; }
+  @keyframes shimmerSweep { to { background-position:200% center; } }
+
+  /* ─── HERO ORB PARALLAX LAYER ─── */
+  .orb-layer { position:absolute; inset:0; z-index:1; will-change:transform; transition:transform .25s ease-out; }
+
+  /* ─── INTERACTIVE TILT CARDS ─── */
+  .subj-card, .pc, .testi-card { transform-style:preserve-3d; }
+
+  /* ─── REDUCED MOTION ─── */
+  @media (prefers-reduced-motion: reduce) {
+    .s-title em, .hero-h1 em { animation:none; }
+    .orb-layer { transition:none; }
+  }
 </style>
 </head>
 <body>
+
+<div id="scroll-progress" aria-hidden="true"></div>
 
 <!-- NAV -->
 <nav>
@@ -462,9 +496,11 @@
 <section id="hero">
   <div class="hero-mesh"></div>
   <div class="hero-lines"></div>
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
+  <div class="orb-layer">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
 
   <div class="hero-inner">
     <!-- logo centrepiece -->
@@ -505,7 +541,7 @@
 
     <div class="hero-stats fade-up" style="animation-delay:.64s">
       <div class="hstat">
-        <div class="hstat-n">£15</div>
+        <div class="hstat-n" data-count="15" data-prefix="£">£15</div>
         <div class="hstat-l">Per Session</div>
       </div>
       <div class="hstat">
@@ -870,7 +906,7 @@
     try {
       const res  = await fetch('https://formspree.io/f/xbdbqyae', { method:'POST', body:new FormData(form) });
       const data = await res.json();
-      if (res.ok) form.style.display='none'; succ.style.display='block'; }
+      if (res.ok) { form.style.display='none'; succ.style.display='block'; }
       else { btn.disabled=false; btn.textContent='Book Free Intro Session →'; alert('Something went wrong — please email DMtuition@gmail.com directly.'); }
     } catch(err) { btn.disabled=false; btn.textContent='Book Free Intro Session →'; alert('Something went wrong — please email DMtuition@gmail.com directly.'); }
   });
@@ -895,6 +931,78 @@
   document.querySelectorAll('.cred-chip').forEach((el,i)  => { el.style.transitionDelay=(i*.06)+'s'; });
   document.querySelectorAll('.grade-chip').forEach((el,i) => { el.style.transitionDelay=(i*.08)+'s'; });
   document.querySelectorAll('.trust-item').forEach((el,i) => { el.style.transitionDelay=(i*.07)+'s'; });
+
+  // ── Motion preferences ──
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ── Scroll progress bar ──
+  const sp = document.getElementById('scroll-progress');
+  if (sp) {
+    const updateProgress = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      sp.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+    };
+    window.addEventListener('scroll', updateProgress, { passive:true });
+    updateProgress();
+  }
+
+  // ── Mouse-reactive hero orbs (parallax) ──
+  const orbLayer = document.querySelector('.orb-layer');
+  if (orbLayer && !reduceMotion) {
+    window.addEventListener('mousemove', e => {
+      const x = (e.clientX / window.innerWidth  - 0.5) * 40;
+      const y = (e.clientY / window.innerHeight - 0.5) * 40;
+      orbLayer.style.transform = `translate(${x}px, ${y}px)`;
+    }, { passive:true });
+  }
+
+  // ── Count-up stats ──
+  const countEls = document.querySelectorAll('[data-count]');
+  if (countEls.length) {
+    const countIO = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        const el = en.target;
+        const target = parseFloat(el.dataset.count) || 0;
+        const prefix = el.dataset.prefix || '';
+        const suffix = el.dataset.suffix || '';
+        countIO.unobserve(el);
+        if (reduceMotion) { el.textContent = prefix + target + suffix; return; }
+        const dur = 1200; let start = null;
+        const step = t => {
+          if (!start) start = t;
+          const p = Math.min((t - start) / dur, 1);
+          el.textContent = prefix + Math.round(p * target) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      });
+    }, { threshold:0.5 });
+    countEls.forEach(el => countIO.observe(el));
+  }
+
+  // ── 3D tilt on cards (pointer devices only) ──
+  const fineHover = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  if (fineHover && !reduceMotion) {
+    document.querySelectorAll('.subj-card,.pc,.testi-card').forEach(card => {
+      const isFeat = card.classList.contains('feat');
+      const rest = isFeat ? 'scale(1.03)' : 'translateY(0)';
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const cx = (e.clientX - r.left) / r.width  - 0.5;
+        const cy = (e.clientY - r.top)  / r.height - 0.5;
+        card.style.transition = 'transform .08s ease-out';
+        card.style.transform =
+          `perspective(900px) rotateX(${-cy*6}deg) rotateY(${cx*6}deg) translateY(-6px)` +
+          (isFeat ? ' scale(1.03)' : '');
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transition = 'transform .4s ease';
+        card.style.transform = rest;
+      });
+    });
+  }
 </script>
 </body>
 </html>
