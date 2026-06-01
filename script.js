@@ -219,3 +219,60 @@
       });
     }, { threshold: 0 }).observe(heroEl);
   }
+
+  // ── Subject-specific animated glyph backgrounds (sub-pages) ──
+  document.querySelectorAll('canvas[data-fx]').forEach(cv => {
+    if (reduceMotion) return;
+    const host = cv.parentElement;
+    const glyphs = (cv.dataset.glyphs || '0|1|2|3|4|5|6|7|8|9').split('|').filter(Boolean);
+    const ctx = cv.getContext('2d');
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+    let w = 0, h = 0, items = [], raf = null, mouse = { x:-9999, y:-9999 };
+
+    function resize() {
+      w = host.offsetWidth; h = host.offsetHeight;
+      cv.width = w * DPR; cv.height = h * DPR;
+      cv.style.width = w + 'px'; cv.style.height = h + 'px';
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      const n = Math.min(34, Math.max(10, Math.floor(w * h / 26000)));
+      items = Array.from({ length: n }, () => ({
+        x: Math.random() * w, y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3,
+        g: glyphs[Math.floor(Math.random() * glyphs.length)],
+        s: 14 + Math.random() * 30, o: 0.06 + Math.random() * 0.15,
+        r: Math.random() * Math.PI, vr: (Math.random() - 0.5) * 0.004
+      }));
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      for (const it of items) {
+        it.x += it.vx; it.y += it.vy; it.r += it.vr;
+        if (it.x < -40) it.x = w + 40; if (it.x > w + 40) it.x = -40;
+        if (it.y < -40) it.y = h + 40; if (it.y > h + 40) it.y = -40;
+        const d = Math.hypot(it.x - mouse.x, it.y - mouse.y);
+        const o = d < 150 ? Math.min(0.55, it.o + (1 - d / 150) * 0.42) : it.o;
+        ctx.save();
+        ctx.translate(it.x, it.y); ctx.rotate(it.r);
+        ctx.font = '600 ' + it.s + "px Outfit, sans-serif";
+        ctx.fillStyle = 'rgba(152,186,212,' + o + ')';
+        ctx.fillText(it.g, 0, 0);
+        ctx.restore();
+      }
+      raf = requestAnimationFrame(draw);
+    }
+
+    host.addEventListener('mousemove', e => {
+      const r = host.getBoundingClientRect();
+      mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top;
+    }, { passive:true });
+    host.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+    window.addEventListener('resize', resize);
+    resize(); draw();
+
+    new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { if (!raf) draw(); }
+      else if (raf) { cancelAnimationFrame(raf); raf = null; }
+    }), { threshold: 0 }).observe(host);
+  });
