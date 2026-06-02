@@ -14,6 +14,8 @@
 
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior:smooth; }
+  /* Offset anchor targets so the fixed nav doesn't cover the heading when a CTA scrolls to a section */
+  section[id], [id].anchor-offset { scroll-margin-top:90px; }
   body { font-family:'Outfit',sans-serif; background:var(--white); color:var(--text-dark); overflow-x:hidden; }
 
   /* ─── NAV ─── */

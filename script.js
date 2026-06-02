@@ -1,4 +1,53 @@
-  // ── Web3Forms AJAX ──
+  // ══════════════════════════════════════════════════════════════════
+  //  ANALYTICS  —  Google Analytics 4  +  Microsoft Clarity
+  //  ─────────────────────────────────────────────────────────────────
+  //  SET-UP (one-time): paste your two IDs below, then commit.
+  //  Until an ID is filled in, that tool stays completely OFF.
+  //    • GA4_ID     → Google Analytics → Admin → Data Streams → "G-XXXXXXXXXX"
+  //    • CLARITY_ID → clarity.microsoft.com → Settings → Setup → e.g. "abcde12fgh"
+  // ══════════════════════════════════════════════════════════════════
+  const GA4_ID     = '';   // e.g. 'G-XXXXXXXXXX'
+  const CLARITY_ID = '';   // e.g. 'abcde12fgh'
+
+  if (GA4_ID) {
+    const g = document.createElement('script');
+    g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+    document.head.appendChild(g);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', GA4_ID);
+  }
+  if (CLARITY_ID) {
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r); t.async=1; t.src='https://www.clarity.ms/tag/'+i;
+      y=l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t,y);
+    })(window, document, 'clarity', 'script', CLARITY_ID);
+  }
+
+  // Fire a named event into whichever analytics tools are switched on.
+  function track(name, params) {
+    if (window.gtag)    gtag('event', name, params || {});
+    if (window.clarity) clarity('event', name);
+  }
+
+  // Confirmed lead: the thank-you page only loads after a successful submit.
+  if (/thank-you\.html$/.test(location.pathname)) track('lead_confirmed');
+
+  // Track taps on phone, email and every "book"/contact CTA, site-wide.
+  document.addEventListener('click', function (e) {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (href.startsWith('tel:'))    track('contact_click', { method: 'phone' });
+    else if (href.startsWith('mailto:')) track('contact_click', { method: 'email' });
+    else if (href.indexOf('#contact') !== -1)
+      track('cta_click', { label: (a.textContent || '').trim().slice(0, 40) });
+  }, { passive: true });
+
+  // ── Formspree AJAX ──
   const form = document.getElementById('enq-form');
   const btn  = document.getElementById('f-btn');
   const succ = document.getElementById('f-success');
@@ -8,7 +57,7 @@
     btn.disabled = true; btn.textContent = 'Sending…';
     try {
       const res  = await fetch('https://formspree.io/f/xbdbqyae', { method:'POST', body:new FormData(form), headers:{ 'Accept':'application/json' } });
-      if (res.ok) { form.style.display='none'; succ.style.display='block'; }
+      if (res.ok) { form.style.display='none'; succ.style.display='block'; track('generate_lead', { method:'form' }); }
       else { btn.disabled=false; btn.textContent='Book Free Intro Session →'; alert('Something went wrong — please email DMtuition@gmail.com directly.'); }
     } catch(err) { btn.disabled=false; btn.textContent='Book Free Intro Session →'; alert('Something went wrong — please email DMtuition@gmail.com directly.'); }
   });
