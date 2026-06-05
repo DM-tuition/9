@@ -18,10 +18,13 @@ Trafford area. Tagline: **Focus · Prepare · Perform.**
 
 ## Founders / lead tutors
 - **Daniel Stevenson — Co-founder.** AGSB Year 12. A-Levels: Maths, Further
-  Maths, Physics, Economics. GCSE grade 9s in the subjects he tutors (maths,
-  sciences, economics). Smart, charismatic, friendly. Senior prefect; football,
-  cricket, founded the volleyball club, runs the finance society. Aiming for
-  engineering at a top university, then finance.
+  Maths, Physics, Economics. **GCSE Maths grade 9 at 96%, sat a year early in
+  Year 10. OCR Level 3 Further Maths grade A (89%) — top grade. Predicted A*A*A*
+  in Maths, Further Maths and Physics, plus an A in Economics at A-Level**
+  (predictions — always label as predicted). GCSE grade 9s in the subjects he
+  tutors (maths, sciences, economics). Smart, charismatic, friendly. Senior
+  prefect; football, cricket, founded the volleyball club, runs the finance
+  society. Aiming for engineering at a top university, then finance.
 - **Mazin Elma — Co-founder.** AGSB Year 12. A-Levels: Further Maths, Physics,
   Economics. GCSE grade 8s and 9s. Top 2% British Physics Olympiad; work
   experience at EY. Funny, great at teaching, relatable. (Fuller bio to come.)
