@@ -4,68 +4,92 @@ This file is auto-loaded at the start of every Claude Code session. Read it
 fully before making changes. **Section "Guardrails" contains hard rules.**
 
 ## Snapshot
-DM Tuition is a newly launched (2026) tutoring service run by two high-achieving
-Year 12 students at Altrincham Grammar School for Boys (AGSB) — Daniel Stevenson
-and Mazin Elma. **Starting small and deliberately focused:** it offers GCSE
-tuition only in the subjects the founders are studying at A-Level and scored top
-grades in — **Maths, Further Maths, Physics, Economics** — plus 11+ preparation.
-Core promise: **"we only tutor the subjects we scored a grade 9 in."** Every
-lesson is tailored to the individual student — prepped around what they're
-struggling with, working through hard exam questions and teaching exam technique.
-Sessions are £15/hour with a free, no-commitment intro session, delivered online
-(preferred) or in person around Altrincham, Sale, Timperley and the wider
-Trafford area. Tagline: **Focus · Prepare · Perform.**
+DM Tuition is a tutoring service launched in 2026 and run **solo** by
+**Daniel Stevenson**, a sixth-former at Altrincham Grammar School for Boys
+(AGSB). Deliberately focused: GCSE tuition only in the subjects Daniel studies
+at A-Level and scored top grades in — **Maths, Further Maths, Physics,
+Economics** — plus 11+ preparation. Core promise: **"I only tutor the subjects
+I scored a grade 9 in."** Every lesson is tailored to the individual student —
+prepped around what they're struggling with, working through hard exam questions
+and teaching exam technique. **£20/hour** with a free, no-commitment intro
+session, delivered online (preferred) or in person around Altrincham, Sale,
+Timperley and the wider Trafford area. Tagline: **Focus · Prepare · Perform.**
 
-## Founders / lead tutors
-- **Daniel Stevenson — Co-founder.** AGSB Year 12. A-Levels: Maths, Further
-  Maths, Physics, Economics. **GCSE Maths grade 9 at 96%, sat a year early in
-  Year 10. OCR Level 3 Further Maths grade A (89%) — top grade. Predicted A*A*A*
-  in Maths, Further Maths and Physics, plus an A in Economics at A-Level**
-  (predictions — always label as predicted). GCSE grade 9s in the subjects he
-  tutors (maths, sciences, economics). Smart, charismatic, friendly. Senior
-  prefect; football, cricket, founded the volleyball club, runs the finance
-  society. Aiming for engineering at a top university, then finance.
-- **Mazin Elma — Co-founder.** AGSB Year 12. A-Levels: Further Maths, Physics,
-  Economics. GCSE grade 8s and 9s. Top 2% British Physics Olympiad; work
-  experience at EY. Funny, great at teaching, relatable. (Fuller bio to come.)
+## Founder / tutor — SOLO
+- **Daniel Stevenson — Founder & sole tutor.** AGSB sixth form. A-Levels: Maths,
+  Further Maths, Physics, Economics. **GCSE Maths grade 9 at 96%, sat a year
+  early in Year 10. OCR Level 3 Further Maths grade A (89%) — top grade.
+  Predicted A*A*A* in Maths, Further Maths and Physics, plus an A in Economics
+  at A-Level** (predictions — always label as predicted). GCSE grade 9s in the
+  subjects he tutors. Passed the 11+ himself. **DBS-checked.** Smart,
+  charismatic, friendly. Senior prefect; football, cricket, founded the
+  volleyball club, runs the finance society. Aiming for engineering at a top
+  university, then finance.
 
-## Tutor network (future, not yet)
-The long-term plan is a network of high-achieving AGSB students for wider
-availability and subject coverage. **For now the site does NOT claim this** —
-it's just Daniel and Mazin tutoring the subjects they personally excel in. Start
-small, prove it, then grow. Do not re-add "network"/"every subject" claims.
+### The business is solo — one tutor only
+DM Tuition previously had a second co-founder, who is **no longer involved**.
+Never describe the business as "run by two AGSB students", "co-founded", "our
+tutors" (plural), or "a team". **Two credentials belonged to that person and must
+never appear on the site: the Top 2% British Physics Olympiad placement and the
+EY work experience.** They are not Daniel's.
+
+Consequence: there is no team to fall back on, so **do not claim near-constant
+availability on the basis of multiple tutors.** Availability is "flexible around
+school, including evenings and weekends" — nothing stronger.
+
+## Tutor network (future ambition, NOT a current claim)
+A network of high-achieving AGSB students is a long-term idea only. The site must
+not imply it exists. Do not re-add "network" / "every subject" / "specialist
+matched tutor" claims.
 
 ## Subjects & boards
 **Focused offering: GCSE Maths, Further Maths, Physics, Economics + 11+ only.**
-These are the subjects the founders study at A-Level and scored top grades in.
+These are the subjects Daniel studies at A-Level and scored top grades in.
 Dedicated pages: `maths`, `further-maths`, `physics`, `economics`, `11-plus`.
 (The 10 other GCSE subject pages were removed — start small, expand only when a
 tutor genuinely excels in the subject.) Strongest on AQA; confident across
 Edexcel/OCR.
 
+## Track record — one real student (honest, and the only claim allowed)
+- One current student: **Year 10, Maths & Physics, weekly since early July 2026.**
+  Started on a free trial, converted to paying.
+- Agreed target: **grade 6 → grade 9** in both subjects. This is a goal in
+  progress, **not an achieved result** — never write it as achieved.
+- **NEVER name the student on the site or in any ad.** She is a minor. The site
+  refers to her only as "a Year 10 student". Her name is in the private brief
+  only.
+- Prefer "since early July 2026" over a week count, so copy doesn't go stale.
+- A reference/testimonial may be requested from her family — until one is
+  actually given, there are no testimonials.
+
 ## Pricing, sessions & payment
-- £15/hour flat, no hidden fees.
+- **£20/hour flat**, no hidden fees. (Any legacy rate for an existing student is
+  private — never state it on the site.)
 - Free intro session, no payment details, no obligation.
 - Length: from 1 hour; can be longer, not shorter.
 - Payment: bank transfer, after the free intro once happy.
-- Cancellation: ~24 hours' notice requested. No commitment; session-by-session.
+- Cancellation: ~24 hours' notice requested. No commitment; session-by-session,
+  or a regular weekly slot at the same £20/hour.
+- **No invented discounts.** The old pair/small-group (£10) and block-of-5
+  (£60/£12) tiers were placeholders and have been removed. Daniel may introduce
+  a discount later if £20 proves too high — don't pre-empt it.
 
 ## Availability & delivery
-- Almost any time, any day (the team means another tutor is usually free).
+- Flexible around school, including evenings and weekends (solo — see above).
 - Online preferred (Zoom / Microsoft Teams); also in person.
 - Year groups: GCSE Years 9–11; 11+ Years 4–5.
 
 ## Location
-Founders based in Timperley, operating across Trafford. In person around
-Altrincham, Sale, Timperley; online nationwide. Marketed areas: Altrincham, Hale,
-Bowdon, Timperley, Sale, wider Trafford / South Manchester.
+Based in Timperley, operating across Trafford. In person around Altrincham,
+Sale, Timperley; online nationwide. Marketed areas: Altrincham, Hale, Bowdon,
+Timperley, Sale, wider Trafford / South Manchester.
 
 ## 11+ preparation
-Every tutor passed the 11+ (AGSB). Target schools: AGSB, Altrincham Grammar School
-for Girls, Sale Grammar, Loreto Grammar, Stretford Grammar, Urmston Grammar, and
-other Trafford / Greater Manchester selective & independent schools. Formats:
-GL / CEM style + school-specific. Skills: verbal reasoning, non-verbal reasoning,
-maths, English/comprehension.
+Daniel passed the 11+ himself (AGSB). Target schools: AGSB, Altrincham Grammar
+School for Girls, Sale Grammar, Loreto Grammar, Stretford Grammar, Urmston
+Grammar, and other Trafford / Greater Manchester selective & independent schools.
+Formats: GL / CEM style + school-specific. Skills: verbal reasoning, non-verbal
+reasoning, maths, English/comprehension.
 
 ## Contact
 - Email: DMtuition@gmail.com
@@ -74,10 +98,14 @@ maths, English/comprehension.
 - Website: dm-tuition.github.io/9 (GitHub Pages; repo `dm-tuition/9`, from `main`)
 
 ## Brand & visual identity
-- **Palette (official):** dark navy, medium blue, light blue, grey/silver.
-  **No gold.** (Live site still has some gold accents — pending re-skin.)
+- **Palette:** dark navy `#0a1628`, navy-mid `#112040`, steel `#5a7faa`,
+  steel-light `#98bad4`, plus a silver accent `--accent #c3cfd9` /
+  `--accent-light #e8eff5`. **No gold — the gold accents were fully removed on
+  11 Aug 2026. Do not reintroduce them.**
 - **Logo:** circular navy emblem, "DM" monogram over an open book. File
   `logo.jpg`. Keep the real logo — bespoke alternatives were rejected.
+- **Never spell out what "DM" stands for.** Daniel considered redefining it as
+  "you DM me" and rejected it. It stays undefined, on the site and in ads.
 - **Typography:** Cormorant Garamond (serif headings), Outfit (sans body).
 - **Aesthetic:** dark, premium, modern/"futuristic" with tasteful animation
   (particle hero, aurora gradients, glow, scroll-reveal, count-up, tilt cards,
@@ -87,41 +115,56 @@ maths, English/comprehension.
 ## What's been built (structure & tech)
 - Static site on GitHub Pages (repo `dm-tuition/9`), served from `main`.
 - Shared `style.css` and `script.js` across all pages.
-- Homepage (`index.html`): hero, ticker, trust bar, about (tailoring/exam-technique
-  focus), subjects grid (4 subjects + 11+), how-it-works, pricing, contact form,
-  footer. **Testimonials section was removed** — no reviews until real ones exist.
+- Homepage (`index.html`): hero, ticker, trust bar, about (tailoring focus),
+  subjects grid (4 subjects + 11+), how-it-works, **`#honest` section** (the
+  "no invented track record" block — new business, one student, no reviews yet),
+  pricing (Free intro / £20 1-to-1 / £20 weekly slot), contact form, footer.
+  **No testimonials section** — it was removed and must not return until real
+  reviews exist.
 - Pages: 4 subject pages (`maths`, `further-maths`, `physics`, `economics`) +
-  `11-plus`, `tutors`, `faq`, `thank-you`.
+  `11-plus`, `tutors` (single solo card, label "Your Tutor"), `faq`,
+  `thank-you`.
 - **Form:** Formspree (endpoint `f/xbdbqyae`); fields `name`, `phone`,
   `_replyto`, `subject_area`, `year_group`, `message`; AJAX with
   `Accept: application/json`; in-page success; `_next` → `thank-you.html`.
 - **SEO:** meta descriptions, Open Graph + Twitter cards, favicon (logo.jpg),
   JSON-LD (EducationalOrganization/LocalBusiness, Course per subject, FAQPage).
 
+## Off-site systems (not in this repo)
+- An enquiry automation pipeline exists (Make.com + Claude API) to auto-reply to
+  website enquiries. It is maintained separately and has its own open work items
+  — see the private brief, not this file.
+- **Never commit an API key, token or secret to this repo.** All model/API calls
+  must go through a server-side proxy, never from browser JavaScript.
+
 ## Guardrails (IMPORTANT — hard rules)
-- **No fabricated track record.** New business — never invent years of
-  experience, student numbers, or pass rates.
+- **Solo founder.** Never "two AGSB students", never "co-founded", never a team
+  or network of tutors. Never add a second tutor or the two credentials noted
+  above (Physics Olympiad, EY work experience).
+- **No fabricated track record.** Never invent years of experience, student
+  numbers, or pass rates. The honest claim is "one current student, working
+  toward a specific grade improvement".
+- **Never name the student.** She is a minor.
 - **Grades must be accurate.** Do NOT claim "Daniel got 8 grade 9s." Use:
-  "we only teach the subjects we scored a grade 9 in."
-- **Testimonials:** none on the site (the placeholder reviews were removed). Do
-  NOT add any until the founders supply real, verified ones.
-- **Only offer subjects the founders genuinely excel in** (currently Maths,
-  Further Maths, Physics, Economics + 11+). Don't pad the subject list or imply a
-  tutor network until it actually exists. Start small.
-- **Lead with tailoring:** lessons are personalised to each student's weak spots,
+  "I only teach the subjects I scored a grade 9 in." Label predicted A-Level
+  grades as predicted.
+- **Testimonials:** none on the site. Do NOT add any until a family supplies a
+  real, verified one.
+- **Only offer subjects Daniel genuinely excels in** (Maths, Further Maths,
+  Physics, Economics + 11+). Don't pad the subject list.
+- **Lead with tailoring:** lessons personalised to the student's weak spots,
   with exam-question practice and exam technique — keep this front and centre.
-- **DBS:** only the lead tutor is checked — don't over-claim that all tutors are
-  DBS-checked.
+- **DBS:** Daniel is DBS-checked. As he's the only tutor this is now a clean
+  claim — but don't imply a wider checked network.
 - **Don't break the enquiry form** — never change the Formspree endpoint, field
   `name`s, or `_next` redirect carelessly.
-- **Keep every claim defensible** and aligned to the navy/blue brand (no gold in
-  final assets).
+- **Keep every claim defensible** and aligned to the navy/blue/silver brand.
 
 ## Roadmap / to-dos
-- Re-skin site gold → navy/blue palette.
-- Add real testimonials once the first clients provide them (none on site now).
-- Expand the subject list only as more tutors who genuinely excel come on board.
+- Facebook ad creative + marketing strategy (next up, on top of Instagram /
+  Facebook / local SEO).
+- Get a real testimonial from the current student's family, then add it.
 - Add real tutor headshots & study photos (with rights).
-- Expand Mazin's bio.
-- Refine pricing/quotes once there's real client experience to base them on.
+- Expand the subject list only if/when more genuinely-excelling tutors join.
 - Optionally optimise the large inline homepage images.
+- (Further private/internal to-dos live in the private brief, not this file.)

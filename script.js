@@ -193,7 +193,7 @@
         }
         const md = Math.hypot(a.x - mouse.x, a.y - mouse.y);
         if (md < 170) {
-          ctx.strokeStyle = 'rgba(201,168,76,' + (0.28 * (1 - md / 170)) + ')';
+          ctx.strokeStyle = 'rgba(232,239,245,' + (0.28 * (1 - md / 170)) + ')';
           ctx.lineWidth = 1;
           ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
         }
