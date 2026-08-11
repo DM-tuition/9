@@ -6,10 +6,10 @@ fully before making changes. **Section "Guardrails" contains hard rules.**
 ## Snapshot
 DM Tuition is a tutoring service launched in 2026 and run **solo** by
 **Daniel Stevenson**, a sixth-former at Altrincham Grammar School for Boys
-(AGSB). Deliberately focused: GCSE tuition only in the subjects Daniel studies
-at A-Level and scored top grades in — **Maths, Further Maths, Physics,
-Economics** — plus 11+ preparation. Core promise: **"I only tutor the subjects
-I scored a grade 9 in."** Every lesson is tailored to the individual student —
+(AGSB). Deliberately focused: GCSE tuition only in the subjects Daniel scored a
+**grade 9** in — **Maths, Further Maths, Physics, Chemistry, Economics** — plus
+11+ preparation. Core promise: **"I only tutor the subjects I scored a grade 9
+in."** Every lesson is tailored to the individual student —
 prepped around what they're struggling with, working through hard exam questions
 and teaching exam technique. **£20/hour** with a free, no-commitment intro
 session, delivered online (preferred) or in person around Altrincham, Sale,
@@ -43,9 +43,12 @@ not imply it exists. Do not re-add "network" / "every subject" / "specialist
 matched tutor" claims.
 
 ## Subjects & boards
-**Focused offering: GCSE Maths, Further Maths, Physics, Economics + 11+ only.**
-These are the subjects Daniel studies at A-Level and scored top grades in.
-Dedicated pages: `maths`, `further-maths`, `physics`, `economics`, `11-plus`.
+**Focused offering: GCSE Maths, Further Maths, Physics, Chemistry, Economics +
+11+ only.** The rule is **a grade 9 at GCSE in that subject** — that is what all five
+have in common. Four are also his A-Levels; **Chemistry is not an A-Level for
+Daniel, so never claim A-Level or predicted grades in Chemistry** — its credential
+is the GCSE grade 9 only. Dedicated pages: `maths`, `further-maths`, `physics`,
+`chemistry`, `economics`, `11-plus`.
 (The 10 other GCSE subject pages were removed — start small, expand only when a
 tutor genuinely excels in the subject.) Strongest on AQA; confident across
 Edexcel/OCR.
@@ -92,7 +95,7 @@ Formats: GL / CEM style + school-specific. Skills: verbal reasoning, non-verbal
 reasoning, maths, English/comprehension.
 
 ## Contact
-- Email: DMtuition@gmail.com
+- Email: dmtuition2026@gmail.com
 - Phone / WhatsApp: 07467 284 353
 - Instagram: @dmtuition2026 · Facebook: DM Tuition
 - Website: dm-tuition.github.io/9 (GitHub Pages; repo `dm-tuition/9`, from `main`)
@@ -116,12 +119,13 @@ reasoning, maths, English/comprehension.
 - Static site on GitHub Pages (repo `dm-tuition/9`), served from `main`.
 - Shared `style.css` and `script.js` across all pages.
 - Homepage (`index.html`): hero, ticker, trust bar, about (tailoring focus),
-  subjects grid (4 subjects + 11+), how-it-works, **`#honest` section** (the
+  subjects grid (5 subjects + 11+), how-it-works, **`#honest` section** (the
   "no invented track record" block — new business, one student, no reviews yet),
   pricing (Free intro / £20 1-to-1 / £20 weekly slot), contact form, footer.
   **No testimonials section** — it was removed and must not return until real
   reviews exist.
-- Pages: 4 subject pages (`maths`, `further-maths`, `physics`, `economics`) +
+- Pages: 5 subject pages (`maths`, `further-maths`, `physics`, `chemistry`,
+  `economics`) +
   `11-plus`, `tutors` (single solo card, label "Your Tutor"), `faq`,
   `thank-you`.
 - **Form:** Formspree (endpoint `f/xbdbqyae`); fields `name`, `phone`,
@@ -151,7 +155,10 @@ reasoning, maths, English/comprehension.
 - **Testimonials:** none on the site. Do NOT add any until a family supplies a
   real, verified one.
 - **Only offer subjects Daniel genuinely excels in** (Maths, Further Maths,
-  Physics, Economics + 11+). Don't pad the subject list.
+  Physics, Chemistry, Economics + 11+). Don't pad the subject list.
+- **Phone first.** Daniel wants enquiries by text/WhatsApp on **07467 284 353** —
+  he finds the form fiddly. Ads and copy should push the number and treat the
+  website as "more information". Keep the form working, but not as the lead CTA.
 - **Lead with tailoring:** lessons personalised to the student's weak spots,
   with exam-question practice and exam technique — keep this front and centre.
 - **DBS:** Daniel is DBS-checked. As he's the only tutor this is now a clean
