@@ -87,12 +87,37 @@ Based in Timperley, operating across Trafford. In person around Altrincham,
 Sale, Timperley; online nationwide. Marketed areas: Altrincham, Hale, Bowdon,
 Timperley, Sale, wider Trafford / South Manchester.
 
-## 11+ preparation
-Daniel passed the 11+ himself (AGSB). Target schools: AGSB, Altrincham Grammar
-School for Girls, Sale Grammar, Loreto Grammar, Stretford Grammar, Urmston
-Grammar, and other Trafford / Greater Manchester selective & independent schools.
-Formats: GL / CEM style + school-specific. Skills: verbal reasoning, non-verbal
-reasoning, maths, English/comprehension.
+## 11+ preparation — SPEC IS CHANGING, keep this accurate
+Daniel passed the 11+ himself (AGSB).
+
+**Trafford Grammar Schools Consortium = 5 schools:** AGSB, Altrincham Grammar
+School for Girls, Sale Grammar, Stretford Grammar, Urmston Grammar. One test
+covers all five. **Loreto Grammar is NOT in the consortium** — it runs its own
+Governors' Entrance Exam (GL for English + Verbal Reasoning, school's own Maths
+paper) with direct registration, so never lump it in with the consortium.
+
+**The test is changing — announced 14 July 2026:**
+- **2027 entry** (test sat 14 Sept 2026): unchanged. **GL Assessment**, two
+  one-hour multiple-choice papers — verbal reasoning, non-verbal reasoning,
+  maths. Registration closed 19 June 2026; results by 31 Oct 2026; allocations
+  1 Mar 2027.
+- **2028 entry** (test sat Sept 2027): new provider **FSCE** (Future Stories
+  Community Enterprise). **VR and NVR papers dropped.** Test based on the
+  **KS2 English and maths curriculum up to the end of Year 5**, rewarding
+  application over recall. FSCE publishes **no past papers** and varies its
+  format annually.
+- **2029 entry onwards:** test moves from Sept of Year 6 to the **latter part of
+  the summer term of Year 5** — several months earlier.
+
+FSCE's paper structure elsewhere (Adventure / Beacon / Compass / Discovery,
+~45–60 min each) is **not confirmed for Trafford** — do not state it as fact for
+Trafford. Always tell parents to confirm against the school's own admissions
+pages, and keep the "as of August 2026" caveat on the 11+ page.
+
+Note: the new test is half **English**, which is NOT one of Daniel's grade 9
+subjects. The 11+ page leads with maths as his specialism and covers English /
+comprehension at Year 5 standard from his own 11+ experience — do not upgrade
+that into a claim of grade 9 English.
 
 ## Contact
 - Email: dmtuition2026@gmail.com
